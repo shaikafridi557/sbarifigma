@@ -183,10 +183,13 @@
 		/* ==================================================
             # Services Carousel
          ===============================================*/
-		const servicesCarousel = new Swiper(".services-carousel", {
+				const servicesCarousel = new Swiper(".services-carousel", {
 			// Optional parameters
 			loop: true,
-			autoplay: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
 			freeMode: true,
 			grabCursor: true,
 			slidesPerView: 1,
